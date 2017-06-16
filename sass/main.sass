@@ -1,6 +1,7 @@
 @import "variables"
 
 .nav
+  position: relative
   width: 30vw
   display: flex
   justify-content: flex-start
@@ -8,6 +9,9 @@
     width: 80%
 
 .button3d
+  positon: relative
+  top: 0px
+  left: 0px
   display: flex
   justify-content: center
   align-items: center
@@ -16,6 +20,19 @@
   width: 60px
   border: 1px solid lighten($primary-color, 5%)
   position: relative
+  &:hover
+    top: 5px
+    left: 5px
+    &::before
+      top: 3px
+      right:  -8px
+      width: 5px
+    &::after
+      bottom: -8px
+      left: 2px
+      height: 5px
+      // transform-origin: 100% 0%
+      // animation: button3d 300ms
   &::before
     content: ''
     transform: matrix(1, 1, 0, 1, 0, 0)
@@ -26,6 +43,8 @@
     background-color: darken($primary-color, 20%)
     position: absolute
     border: 1px solid lighten($primary-color, 5%)
+    &:hover
+      animation: button3d 300ms
   &::after
     content: ''
     transform: matrix(1, 0, 1, 1, 0, 0)
@@ -36,5 +55,32 @@
     background-color: darken($primary-color, 30%)
     position: absolute
     border: 1px solid lighten($primary-color, 5%)
+    &:hover
+      animation: button3d 300ms
   img
     width: 70%
+
+
+
+@keyframes button3d
+  from
+    transform: scaleX(0)
+  to
+    transform: scaleX(.7)
+@-moz-keyframes button3d
+  from
+    transform: scaleX(0)
+  to
+    transform: scaleX(.7)
+
+@-webkit-keyframes button3d
+  from
+    transform: scaleX(0)
+  to
+    transform: scaleX(.7)
+
+@keyframes button3d
+  from
+    transform: scaleX(0)
+  to
+    transform: scaleX(.7)

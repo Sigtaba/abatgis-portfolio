@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   width: 30vw;
   display: flex;
   justify-content: flex-start; }
@@ -6,6 +7,9 @@
     width: 80%; }
 
 .button3d {
+  positon: relative;
+  top: 0px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +18,17 @@
   width: 60px;
   border: 1px solid #e8e64f;
   position: relative; }
+  .button3d:hover {
+    top: 5px;
+    left: 5px; }
+    .button3d:hover::before {
+      top: 3px;
+      right: -8px;
+      width: 5px; }
+    .button3d:hover::after {
+      bottom: -8px;
+      left: 2px;
+      height: 5px; }
   .button3d::before {
     content: "";
     transform: matrix(1, 1, 0, 1, 0, 0);
@@ -24,6 +39,8 @@
     background-color: #a2a015;
     position: absolute;
     border: 1px solid #e8e64f; }
+    .button3d::before:hover {
+      animation: button3d 300ms; }
   .button3d::after {
     content: "";
     transform: matrix(1, 0, 1, 1, 0, 0);
@@ -34,7 +51,30 @@
     background-color: #75740f;
     position: absolute;
     border: 1px solid #e8e64f; }
+    .button3d::after:hover {
+      animation: button3d 300ms; }
   .button3d img {
     width: 70%; }
+
+@keyframes button3d {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(0.7); } }
+@-moz-keyframes button3d {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(0.7); } }
+@-webkit-keyframes button3d {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(0.7); } }
+@keyframes button3d {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(0.7); } }
 
 /*# sourceMappingURL=main.css.map */
