@@ -1,31 +1,43 @@
 @import "variables"
 
-#header
+.top
+  width: 100%
   display: flex
+  flex-direction: row
+
+body
+  background-color: $background-color
 
 
 ////NAVBAR/////
+
+#sidenav
+  display: flex
+  height: 400px
 
 .nav
   top: 20px
   left: 20px
   position: relative
-  width: 30vw
+  width: 25vw
   display: flex
   justify-content: flex-start
   img
     width: 80%
 
 .menu
+  height: 0
   position: relative
   display: none
   background-color: $primary-color
-  width: 150px
+  width: 180px
   padding: 50px
   top: -20px
   left: -30px
+  transition: height ease 5s
   &:hover
     display: block
+    height: 70%
   &::before
     content: ''
     transform: matrix(1, 1, 0, 1, 0, 0)
@@ -53,13 +65,16 @@
   ul
     list-style-type: none
   li
-    line-height: 40px
-    font-family: system-ui
+    text-align: right
+    line-height: 60px
+    font-family: 'Comfortaa', cursive
+    font-size: 30px
 
 
 
 .button3d:hover + .menu
   display: block
+  height: 70%
 
 .button3d
   z-index: 2
@@ -125,7 +140,7 @@
   margin-top: 50px
   border: 5px solid $primary-color
   height: 200px
-  width: 60vw
+  width: 70vw
   position: relative
   h1
     font-family: 'Megrim', cursive
@@ -144,3 +159,37 @@
   position: absolute
   top: 20px
   left: 20px
+
+
+///////////About ////////////////////////
+
+
+#about img
+  margin: 20px 90px 20px 20px
+  width: 230px
+  display: flex
+  flex-wrap: wrap
+  border: 3px solid white
+  &::before
+    content: ''
+    transform: matrix(1, 1, 0, 1, 0, 0)
+    width: 10px
+    height: 100%
+    right: -13px
+    top: 4.5px
+    background-color: darken($primary-color, 20%)
+    position: absolute
+    border: 1px solid darken($primary-color, 20%)
+
+
+#about
+  font-size: 20px
+  font-family: Comfortaa
+  line-height: 50px
+  margin: auto 80px
+  display: flex
+  align-items: center
+  h3
+    font-size: 60px
+    margin: 0
+    font-family: 'League Script', cursive

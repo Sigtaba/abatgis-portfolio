@@ -1,26 +1,38 @@
-#header {
-  display: flex; }
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+body {
+  background-color: #E9E0E9; }
+
+#sidenav {
+  display: flex;
+  height: 400px; }
 
 .nav {
   top: 20px;
   left: 20px;
   position: relative;
-  width: 30vw;
+  width: 25vw;
   display: flex;
   justify-content: flex-start; }
   .nav img {
     width: 80%; }
 
 .menu {
+  height: 0;
   position: relative;
   display: none;
   background-color: #E5E338;
-  width: 150px;
+  width: 180px;
   padding: 50px;
   top: -20px;
-  left: -30px; }
+  left: -30px;
+  transition: height ease 5s; }
   .menu:hover {
-    display: block; }
+    display: block;
+    height: 70%; }
   .menu::before {
     content: "";
     transform: matrix(1, 1, 0, 1, 0, 0);
@@ -48,11 +60,14 @@
   .menu ul {
     list-style-type: none; }
   .menu li {
-    line-height: 40px;
-    font-family: system-ui; }
+    text-align: right;
+    line-height: 60px;
+    font-family: "Comfortaa", cursive;
+    font-size: 30px; }
 
 .button3d:hover + .menu {
-  display: block; }
+  display: block;
+  height: 70%; }
 
 .button3d {
   z-index: 2;
@@ -115,7 +130,7 @@
   margin-top: 50px;
   border: 5px solid #E5E338;
   height: 200px;
-  width: 60vw;
+  width: 70vw;
   position: relative; }
   .title h1 {
     font-family: "Megrim", cursive;
@@ -134,5 +149,34 @@
   position: absolute;
   top: 20px;
   left: 20px; }
+
+#about img {
+  margin: 20px 90px 20px 20px;
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid white; }
+  #about img::before {
+    content: "";
+    transform: matrix(1, 1, 0, 1, 0, 0);
+    width: 10px;
+    height: 100%;
+    right: -13px;
+    top: 4.5px;
+    background-color: #a2a015;
+    position: absolute;
+    border: 1px solid #a2a015; }
+
+#about {
+  font-size: 20px;
+  font-family: Comfortaa;
+  line-height: 50px;
+  margin: auto 80px;
+  display: flex;
+  align-items: center; }
+  #about h3 {
+    font-size: 60px;
+    margin: 0;
+    font-family: "League Script", cursive; }
 
 /*# sourceMappingURL=main.css.map */
