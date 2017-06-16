@@ -1,4 +1,9 @@
+#header {
+  display: flex; }
+
 .nav {
+  top: 20px;
+  left: 20px;
   position: relative;
   width: 30vw;
   display: flex;
@@ -6,7 +11,51 @@
   .nav img {
     width: 80%; }
 
+.menu {
+  position: relative;
+  display: none;
+  background-color: #E5E338;
+  width: 150px;
+  padding: 50px;
+  top: -20px;
+  left: -30px; }
+  .menu:hover {
+    display: block; }
+  .menu::before {
+    content: "";
+    transform: matrix(1, 1, 0, 1, 0, 0);
+    width: 10px;
+    height: 100%;
+    right: -12px;
+    top: 4.5px;
+    background-color: #a2a015;
+    position: absolute;
+    border: 1px solid #a2a015; }
+    .menu::before:hover {
+      animation: button3d 300ms; }
+  .menu::after {
+    content: "";
+    transform: matrix(1, 0, 1, 1, 0, 0);
+    width: 100%;
+    height: 10px;
+    bottom: -12px;
+    left: 5px;
+    background-color: #75740f;
+    position: absolute;
+    border: 1px solid #75740f; }
+  .menu a {
+    color: white; }
+  .menu ul {
+    list-style-type: none; }
+  .menu li {
+    line-height: 40px;
+    font-family: system-ui; }
+
+.button3d:hover + .menu {
+  display: block; }
+
 .button3d {
+  z-index: 2;
   positon: relative;
   top: 0px;
   left: 0px;
@@ -16,8 +65,9 @@
   background-color: #E5E338;
   height: 60px;
   width: 60px;
-  border: 1px solid #e8e64f;
-  position: relative; }
+  border: 1px solid #e2e021;
+  position: relative;
+  transition: top 100ms, left 100ms, bottom 100ms; }
   .button3d:hover {
     top: 5px;
     left: 5px; }
@@ -38,9 +88,8 @@
     top: 4.5px;
     background-color: #a2a015;
     position: absolute;
-    border: 1px solid #e8e64f; }
-    .button3d::before:hover {
-      animation: button3d 300ms; }
+    border: 1px solid #a2a015;
+    transition: top 100ms, left 100ms, bottom 100ms, right 100ms, width 100ms, height 100ms; }
   .button3d::after {
     content: "";
     transform: matrix(1, 0, 1, 1, 0, 0);
@@ -50,31 +99,40 @@
     left: 5px;
     background-color: #75740f;
     position: absolute;
-    border: 1px solid #e8e64f; }
-    .button3d::after:hover {
-      animation: button3d 300ms; }
+    border: 1px solid #75740f;
+    transition: top 100ms, left 100ms, bottom 100ms, width 100ms, height 100ms; }
   .button3d img {
     width: 70%; }
 
-@keyframes button3d {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(0.7); } }
-@-moz-keyframes button3d {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(0.7); } }
-@-webkit-keyframes button3d {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(0.7); } }
-@keyframes button3d {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(0.7); } }
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: system-ui;
+  margin-top: 50px;
+  border: 5px solid #E5E338;
+  height: 200px;
+  width: 60vw;
+  position: relative; }
+  .title h1 {
+    font-family: "Megrim", cursive;
+    font-weight: normal;
+    font-size: 120px; }
+
+.title-background {
+  z-index: -1;
+  background: #4EC5C1;
+  background: -webkit-linear-gradient(left top, #E5E338, #4EC5C1);
+  background: -o-linear-gradient(bottom right, #E5E338, #4EC5C1);
+  background: -moz-linear-gradient(bottom right, #E5E338, #4EC5C1);
+  background: linear-gradient(to bottom right, #E5E338, #4EC5C1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
