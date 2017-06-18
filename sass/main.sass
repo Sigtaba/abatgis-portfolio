@@ -15,26 +15,35 @@ body
   display: flex
   height: 400px
 
+#button-image
+  width: 80%
+
 .nav
-  top: 20px
-  left: 20px
+  top: -40px
+  left: 90px
   position: relative
   width: 25vw
   display: flex
   justify-content: flex-start
-  img
-    width: 80%
+
+.links
+  top: 0px
+  position: absolute
+  height: 90%
+  overflow: hidden
+
+.links ul
+  padding-top: 90px
 
 .menu
-  height: 0
+  height: 30px
   position: relative
-  display: none
   background-color: $primary-color
   width: 180px
   padding: 50px
   top: -20px
   left: -30px
-  transition: height ease 5s
+  transition: height ease 3s
   &:hover
     display: block
     height: 70%
@@ -48,8 +57,7 @@ body
     background-color: darken($primary-color, 20%)
     position: absolute
     border: 1px solid darken($primary-color, 20%)
-    &:hover
-      animation: button3d 300ms
+    overflow: hidden
   &::after
     content: ''
     transform: matrix(1, 0, 1, 1, 0, 0)
@@ -69,7 +77,6 @@ body
     line-height: 60px
     font-family: 'Comfortaa', cursive
     font-size: 30px
-
 
 
 .button3d:hover + .menu
@@ -123,8 +130,6 @@ body
     position: absolute
     border: 1px solid darken($primary-color, 30%)
     transition: top 100ms, left 100ms, bottom 100ms, width 100ms, height 100ms
-  img
-    width: 70%
 
 
     //////Title//////////////////
@@ -138,9 +143,11 @@ body
   font-size: 50px
   font-family: system-ui
   margin-top: 50px
+  margin-left: 10vw
+  margin-right: 10vw
   border: 5px solid $primary-color
   height: 200px
-  width: 70vw
+  width: 80vw
   position: relative
   h1
     font-family: 'Megrim', cursive
@@ -164,7 +171,7 @@ body
 ///////////About ////////////////////////
 
 
-#about img
+.my-image img
   margin: 20px 90px 20px 20px
   width: 230px
   display: flex
@@ -183,13 +190,63 @@ body
 
 
 #about
+  margin-left: 10vw
+  margin-right: 10vw
+  margin-top: 100px
   font-size: 20px
   font-family: Comfortaa
   line-height: 50px
-  margin: auto 80px
+  // margin: 100px 100px 100px 150px
   display: flex
   align-items: center
   h3
     font-size: 60px
     margin: 0
     font-family: 'League Script', cursive
+
+.about-text
+  width: 90vw
+  background-color: rgba(255, 255, 255, 0.4)
+  color: darken($tertiary-color, 10%)
+  padding: 20px
+  h3
+    color: $tertiary-color
+
+
+/////////////// Divider ////////////
+
+#divide
+  font-size: 100px
+  letter-spacing: 20px
+  position: relative
+  height: 150px
+
+.divide-1
+  position: absolute
+  top: 20px
+  left: 20px
+  color: $secondary-color
+
+.divide-2
+  position: absolute
+  color: white
+
+
+
+
+
+//////////// Projects /////////////////////////
+
+.project
+  margin: 20px auto
+  width: 300px
+
+.project img
+  width: 300px
+  height: 300px
+
+#projects
+  margin: auto 10vw
+  display: flex
+  flex-wrap: wrap
+  justify-content: center

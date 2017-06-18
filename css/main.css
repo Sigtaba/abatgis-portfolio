@@ -10,26 +10,35 @@ body {
   display: flex;
   height: 400px; }
 
+#button-image {
+  width: 80%; }
+
 .nav {
-  top: 20px;
-  left: 20px;
+  top: -40px;
+  left: 90px;
   position: relative;
   width: 25vw;
   display: flex;
   justify-content: flex-start; }
-  .nav img {
-    width: 80%; }
+
+.links {
+  top: 0px;
+  position: absolute;
+  height: 90%;
+  overflow: hidden; }
+
+.links ul {
+  padding-top: 90px; }
 
 .menu {
-  height: 0;
+  height: 30px;
   position: relative;
-  display: none;
   background-color: #E5E338;
   width: 180px;
   padding: 50px;
   top: -20px;
   left: -30px;
-  transition: height ease 5s; }
+  transition: height ease 3s; }
   .menu:hover {
     display: block;
     height: 70%; }
@@ -42,9 +51,8 @@ body {
     top: 4.5px;
     background-color: #a2a015;
     position: absolute;
-    border: 1px solid #a2a015; }
-    .menu::before:hover {
-      animation: button3d 300ms; }
+    border: 1px solid #a2a015;
+    overflow: hidden; }
   .menu::after {
     content: "";
     transform: matrix(1, 0, 1, 1, 0, 0);
@@ -116,8 +124,6 @@ body {
     position: absolute;
     border: 1px solid #75740f;
     transition: top 100ms, left 100ms, bottom 100ms, width 100ms, height 100ms; }
-  .button3d img {
-    width: 70%; }
 
 .title {
   display: flex;
@@ -128,9 +134,11 @@ body {
   font-size: 50px;
   font-family: system-ui;
   margin-top: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   border: 5px solid #E5E338;
   height: 200px;
-  width: 70vw;
+  width: 80vw;
   position: relative; }
   .title h1 {
     font-family: "Megrim", cursive;
@@ -150,13 +158,13 @@ body {
   top: 20px;
   left: 20px; }
 
-#about img {
+.my-image img {
   margin: 20px 90px 20px 20px;
   width: 230px;
   display: flex;
   flex-wrap: wrap;
   border: 3px solid white; }
-  #about img::before {
+  .my-image img::before {
     content: "";
     transform: matrix(1, 1, 0, 1, 0, 0);
     width: 10px;
@@ -168,15 +176,55 @@ body {
     border: 1px solid #a2a015; }
 
 #about {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 100px;
   font-size: 20px;
   font-family: Comfortaa;
   line-height: 50px;
-  margin: auto 80px;
   display: flex;
   align-items: center; }
   #about h3 {
     font-size: 60px;
     margin: 0;
     font-family: "League Script", cursive; }
+
+.about-text {
+  width: 90vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #4f4263;
+  padding: 20px; }
+  .about-text h3 {
+    color: #675682; }
+
+#divide {
+  font-size: 100px;
+  letter-spacing: 20px;
+  position: relative;
+  height: 150px; }
+
+.divide-1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #4EC5C1; }
+
+.divide-2 {
+  position: absolute;
+  color: white; }
+
+.project {
+  margin: 20px auto;
+  width: 300px; }
+
+.project img {
+  width: 300px;
+  height: 300px; }
+
+#projects {
+  margin: auto 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */
