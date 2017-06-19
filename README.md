@@ -3,7 +3,7 @@
 ## Description:
 #### A website displaying Isabella's work
 
-####Created on 6.18.2017
+Created on 6.18.2017
 
 ## Set Up & Installation:
 * Visit the following link: <https://sigtaba.github.io/abatgis-portfolio/>
@@ -27,4 +27,4 @@ Created using the following technologies:
 
 ## Licensing:
 MIT license.
-*Copyright (c) 2017 Isabella Abatgis**
+*Copyright (c) 2017 Isabella Abatgis*
