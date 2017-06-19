@@ -6,7 +6,7 @@
 ####Created on 6.18.2017
 
 ## Set Up & Installation:
-* Visit the following link: <https://sigtaba.github.io/portfolio/>
+* Visit the following link: <https://sigtaba.github.io/abatgis-portfolio/>
 
 OR you can:
 
