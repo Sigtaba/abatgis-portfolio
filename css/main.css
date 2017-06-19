@@ -197,34 +197,88 @@ body {
   .about-text h3 {
     color: #675682; }
 
-#divide {
+.divide {
   font-size: 100px;
   letter-spacing: 20px;
   position: relative;
-  height: 150px; }
+  height: 150px;
+  margin: 100px 0; }
 
 .divide-1 {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: -120px;
   color: #4EC5C1; }
 
 .divide-2 {
+  left: -100px;
   position: absolute;
   color: white; }
 
-.project {
-  margin: 20px auto;
-  width: 300px; }
-
-.project img {
-  width: 300px;
-  height: 300px; }
+h2 {
+  text-align: center;
+  display: block;
+  font-family: "comfortaa";
+  font-size: 80px;
+  color: white;
+  text-shadow: 4px 4px #E5E338; }
 
 #projects {
-  margin: auto 10vw;
+  margin: auto 5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+
+.project-container {
+  perspective: 1000px;
+  margin: 30px 50px; }
+  .project-container img {
+    width: 350px;
+    height: 350px; }
+
+.project-container:hover .project, .project-container.hover .project {
+  transform: rotateY(180deg); }
+
+.project-container, .image-box, .info-box {
+  width: 350px;
+  height: 350px; }
+
+/* flip speed goes here */
+.project {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.image-box, .info-box {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.image-box {
+  z-index: 2;
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.info-box {
+  color: #362d45;
+  font-family: "comfortaa";
+  font-size: 16px;
+  padding: 20px;
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, 0.5); }
+  .info-box a {
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #4EC5C1;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px; }
+  .info-box strong {
+    font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
