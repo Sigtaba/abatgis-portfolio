@@ -11,9 +11,33 @@ body
 
 ////NAVBAR/////
 
+#mobile-menu
+  text-align: center
+  margin-top: 100px
+  ul li
+    font-family: 'comfortaa'
+    font-size: 20px
+    display: inline-block
+    margin: 0px 10px
+    border: 2px solid white
+    padding: 20px
+    @media screen and (max-width: 650px)
+      font-size: 15px
+      margin: 0 5px
+      padding: 10px
+    @media screen and (max-width: 450px)
+      margin-top: 20px
+    a
+      color: $secondary-color
+      text-decoration: none
+  @media screen and (min-width: 1200px)
+    display: none
+
 #sidenav
   display: flex
   height: 400px
+  @media screen and (max-width: 1200px)
+    display: none
 
 #button-image
   width: 80%
@@ -149,10 +173,15 @@ body
   height: 200px
   width: 80vw
   position: relative
+  @media screen and (max-width: 1200px)
+    margin-left: 5vw
+    margin-right: 5vw
   h1
     font-family: 'Megrim', cursive
     font-weight: normal
     font-size: 120px
+    @media screen and (max-width: 1200px)
+      font-size: 80px
 
 .title-background
   z-index: -1
@@ -211,6 +240,9 @@ body
   padding: 20px
   h3
     color: $tertiary-color
+  @media screen and (max-width: 600px)
+    font-size: 16px
+    line-height: 40px
 
 
 /////////////// Divider ////////////

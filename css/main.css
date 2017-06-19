@@ -6,9 +6,37 @@
 body {
   background-color: #E9E0E9; }
 
+#mobile-menu {
+  text-align: center;
+  margin-top: 100px; }
+  #mobile-menu ul li {
+    font-family: "comfortaa";
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 10px;
+    border: 2px solid white;
+    padding: 20px; }
+    @media screen and (max-width: 650px) {
+      #mobile-menu ul li {
+        font-size: 15px;
+        margin: 0 5px;
+        padding: 10px; } }
+    @media screen and (max-width: 450px) {
+      #mobile-menu ul li {
+        margin-top: 20px; } }
+    #mobile-menu ul li a {
+      color: #4EC5C1;
+      text-decoration: none; }
+  @media screen and (min-width: 1200px) {
+    #mobile-menu {
+      display: none; } }
+
 #sidenav {
   display: flex;
   height: 400px; }
+  @media screen and (max-width: 1200px) {
+    #sidenav {
+      display: none; } }
 
 #button-image {
   width: 80%; }
@@ -140,10 +168,17 @@ body {
   height: 200px;
   width: 80vw;
   position: relative; }
+  @media screen and (max-width: 1200px) {
+    .title {
+      margin-left: 5vw;
+      margin-right: 5vw; } }
   .title h1 {
     font-family: "Megrim", cursive;
     font-weight: normal;
     font-size: 120px; }
+    @media screen and (max-width: 1200px) {
+      .title h1 {
+        font-size: 80px; } }
 
 .title-background {
   z-index: -1;
@@ -196,6 +231,10 @@ body {
   padding: 20px; }
   .about-text h3 {
     color: #675682; }
+  @media screen and (max-width: 600px) {
+    .about-text {
+      font-size: 16px;
+      line-height: 40px; } }
 
 .divide {
   font-size: 100px;
