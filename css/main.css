@@ -4,7 +4,9 @@
   flex-direction: row; }
 
 body {
-  background-color: #E9E0E9; }
+  background-color: #E9E0E9;
+  margin: 0;
+  overflow-x: hidden; }
 
 #mobile-menu {
   text-align: center;
@@ -157,25 +159,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   text-align: center;
   font-size: 50px;
   font-family: system-ui;
   margin-top: 50px;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  border: 5px solid #E5E338;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+  margin-bottom: 50px;
+  border: 5px solid black;
   height: 200px;
-  width: 80vw;
+  width: 85vw;
   position: relative; }
   @media screen and (max-width: 1200px) {
     .title {
       margin-left: 5vw;
       margin-right: 5vw; } }
   .title h1 {
-    font-family: "Megrim", cursive;
+    font-family: arial black;
     font-weight: normal;
-    font-size: 120px; }
+    font-size: 90px; }
     @media screen and (max-width: 1200px) {
       .title h1 {
         font-size: 80px; } }
@@ -211,10 +214,8 @@ body {
     border: 1px solid #a2a015; }
 
 #about {
-  margin-left: 10vw;
   margin-right: 10vw;
   margin-top: 100px;
-  font-size: 20px;
   font-family: Comfortaa;
   line-height: 50px;
   display: flex;
@@ -225,99 +226,82 @@ body {
     font-family: "League Script", cursive; }
 
 .about-text {
+  margin-top: -40px;
   width: 90vw;
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #4f4263;
-  padding: 20px; }
+  background-color: black;
+  color: white;
+  padding: 50px 20px 40px 10vw; }
   .about-text h3 {
-    color: #675682; }
+    color: #E5E338; }
   @media screen and (max-width: 600px) {
     .about-text {
       font-size: 16px;
       line-height: 40px; } }
-
-.divide {
-  font-size: 100px;
-  letter-spacing: 20px;
-  position: relative;
-  height: 150px;
-  margin: 100px 0; }
-
-.divide-1 {
-  position: absolute;
-  top: 20px;
-  left: -120px;
-  color: #4EC5C1; }
-
-.divide-2 {
-  left: -100px;
-  position: absolute;
-  color: white; }
 
 h2 {
   text-align: center;
   display: block;
   font-family: "comfortaa";
   font-size: 80px;
-  color: white;
+  color: black;
   text-shadow: 4px 4px #E5E338; }
 
 #projects {
-  margin: auto 5vw;
+  background: #4EC5C1;
+  background: -webkit-linear-gradient(left top, #4EC5C1, #E5E338);
+  background: -o-linear-gradient(bottom right, #4EC5C1, #E5E338);
+  background: -moz-linear-gradient(bottom right, #4EC5C1, #E5E338);
+  background: linear-gradient(to bottom right, #4EC5C1, #E5E338);
+  height: 1500px;
+  width: 100vw;
+  -webkit-transform: skew(0deg, -13deg);
+  margin-top: 100px; }
+
+.blocks {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: flex-end;
+  -webkit-transform: skew(0deg, 13deg); }
 
-.project-container {
-  perspective: 1000px;
-  margin: 30px 50px; }
-  .project-container img {
-    width: 350px;
-    height: 350px; }
+.block {
+  background-color: black;
+  height: 100px;
+  margin-bottom: 50px; }
 
-.project-container:hover .project, .project-container.hover .project {
-  transform: rotateY(180deg); }
+#block1 {
+  width: 230px; }
 
-.project-container, .image-box, .info-box {
-  width: 350px;
-  height: 350px; }
+#block2 {
+  width: 700px;
+  color: white;
+  font-family: arial black;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* flip speed goes here */
-.project {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative; }
+#block3 {
+  width: 450px; }
 
-/* hide back of pane during swap */
-.image-box, .info-box {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0; }
+#project-list {
+  margin-top: 100px; }
 
-/* front pane, placed above back */
-.image-box {
-  z-index: 2;
-  transform: rotateY(0deg); }
+.project-right {
+  -webkit-transform: skew(0deg, 13deg);
+  display: flex;
+  margin: 20px 100px;
+  text-align: right; }
+  .project-right img {
+    max-width: 500px; }
+  .project-right h3 {
+    font-family: arial black;
+    font-size: 50px;
+    margin: 0; }
+  .project-right p, .project-right a {
+    font-family: "comfortaa"; }
 
-/* back, initially hidden pane */
-.info-box {
-  color: #362d45;
-  font-family: "comfortaa";
-  font-size: 16px;
-  padding: 20px;
-  transform: rotateY(180deg);
-  background-color: rgba(255, 255, 255, 0.5); }
-  .info-box a {
-    font-size: 30px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #4EC5C1;
-    text-decoration: none;
-    border: 2px solid white;
-    padding: 5px; }
-  .info-box strong {
-    font-weight: 700; }
+.info {
+  margin-right: 40px; }
 
 /*# sourceMappingURL=main.css.map */
