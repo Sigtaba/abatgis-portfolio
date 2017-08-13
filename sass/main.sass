@@ -17,7 +17,7 @@ body
   text-align: center
   margin-top: 100px
   ul li
-    font-family: system-ui
+    font-family: $main-font
     font-size: 20px
     display: inline-block
     margin: 0px 10px
@@ -95,15 +95,15 @@ body
     position: absolute
     border: 1px solid darken($primary-color, 30%)
   a
-    color: $main-font-color
+    color: black
   ul
     list-style-type: none
   li
     text-align: right
     line-height: 60px
-    font-family: system-ui
-    text-transform: uppercase
-    letter-spacing: 2px
+    font-family: $main-font
+    // text-transform: uppercase
+    letter-spacing: 1px
     font-size: 30px
 
 
@@ -181,9 +181,9 @@ body
     margin-left: 5vw
     margin-right: 5vw
   h1
-    font-family: Arial Black
+    font-family: $header-font
     font-weight: normal
-    font-size: 90px
+    font-size: 100px
     @media screen and (max-width: 1200px)
       font-size: 80px
 
@@ -225,16 +225,17 @@ body
 #about
   margin-right: 10vw
   margin-top: 100px
-  font-family: 'Didact Gothic', sans-serif
-  letter-spacing: 3px
+  font-family: $main-font
+  font-size: 18px
+  letter-spacing: 2px
+  line-height: 30px
   display: flex
   align-items: center
-  font-size: 20px
   h3
     text-transform: none
     font-size: 60px
-    margin: 0
-    font-family: 'League Script', cursive
+    margin: 30px 0 20px 0
+    font-family: $main-font
 
 .about-text
   margin-top: -40px
@@ -258,7 +259,7 @@ body
 h2
   text-align: center
   display: block
-  font-family: 'comfortaa'
+  font-family: $main-font
   font-size: 80px
   color: black
   text-shadow: 4px 4px $primary-color
@@ -292,7 +293,7 @@ h2
 #block2
   width: 700px
   color: white
-  font-family: arial black
+  font-family: $header-font
   font-size: 80px
   display: flex
   justify-content: center
@@ -347,8 +348,8 @@ h2
   width: 30vw
 
 
-#album-container
-  height: 600px
+#doctor-container
+  height: 660px
 
 #polli-container
   height: 700px
@@ -384,19 +385,20 @@ h2
   h3
     margin: 0px auto
     background-color: white
-    width: 50%
+    width: 70%
     color: black
-    font-family: system-ui
+    font-family: $main-font
     text-transform: uppercase
     letter-spacing: 4px
     padding: 20px
     font-size: 40px
   p
-    font-family: system-ui
-    font-size: 14px
-    text-transform: uppercase
+    font-family: $main-font
+    font-size: 16px
     letter-spacing: 4px
-    padding: 0px 50px
+    line-height: 30px
+    padding: 0px 45px
+    // margin: 5px 0
 
 #polli-box
   width: 500px
@@ -412,8 +414,8 @@ h2
   left: 25px
   opacity: 0
 
-#album-box
-  height: 507.92px
+#doctor-box
+  height: 538.73px
 
 #te-box
   height: 585.3px
@@ -426,3 +428,27 @@ h2
 
 #industrial-box
   height: 355.8px
+
+.portfolio-links
+  display: flex
+  justify-content: space-around
+  margin: 0 40px
+
+.portfolio-link
+  font-size: 14px
+  font-family: $main-font
+  color: black
+  margin-top: 10px
+  text-align: center
+  a
+    padding: 8px
+    margin-bottom: 20px
+    background-color: white
+    width: 50%
+    text-decoration: none
+    &:hover
+      background-color: $primary-color
+    &:active
+      color: black
+    &:visited
+      color: black
