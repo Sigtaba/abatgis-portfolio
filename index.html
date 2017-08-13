@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|League+Script|Megrim|Sacramento|The+Girl+Next+Door" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -31,7 +32,7 @@
     <section id="about">
       <div class="about-text">
         <h3>hello</h3>
-        <p>I'm a web designer based in Portland, Oregon. I'm currently attending the coding bootcamp, Epicodus, where we study things like CSS, Sass, JavaScript, &amp;  JQuery. Before I got into web design I worked in eCommerce managing websites, so I'm pretty familiar with the industry. Creating has always been very important to me, and I'm very excited to be back at it again! Colorful pallettes and uncommon layouts are something I'm very drawn to.</p>
+        <p>I'm a front-end web designer based in Portland, Oregon. I'm currently attending the coding bootcamp, Epicodus, where we study things like CSS, Sass, JavaScript, &amp;  JQuery.  Creating has always been very important to me. Colorful pallettes and uncommon layouts are something I'm very drawn to.</p>
       </div>
       <section id="sidenav">
         <div class="nav">
@@ -58,15 +59,53 @@
         <div id="block3" class="block"></div>
       </div>
       <div id="project-list">
-        <div class="project-right">
-          <div class="info">
-            <h3>P.O.L.L.I.</h3><br>
-            <p>P.O.L.L.I. (program operated load lifting instrument) is a robotic arm programmed in JavaScript and Johnny-Five. The arm can be controlled through a Leap Motion Controller or our user interface. I designed and coded the webpage and control panel.</p>
-            <a href="https://sigtaba.github.io/P.O.L.L.I/" class="project-text">View live site</a><br>
-            <a href="https://github.com/Sigtaba/P.O.L.L.I" class="project-text">View GitHub repository</a>
+        <div class="project-column-left">
+          <div id="polli-container" class="project-container">
+            <a class="thumb" href="https://sigtaba.github.io/P.O.L.L.I/"><img src="img/polli-thumb.png"></a>
+            <div class="black-image-box" id="polli-box">
+              <h3>P.O.L.L.I.</h3>
+              <p>A 4 person project to build a robotic arm and create a working control panel. We used an AL5D Robotic arm attached to an Arduino Uno board.  My primary responsiblity was to design the user interface. </p>
+
+            </div>
           </div>
-          <a href="https://sigtaba.github.io/P.O.L.L.I/"><img src="img/polli-thumb.png"></a>
+          <div id="google-container" class="project-container">
+            <a class="thumb" href="https://sigtaba.github.io/think-with-google/"><img src="img/think-with-google.png"></a>
+            <div class="black-image-box" id="google-box"></div>
+          </div>
+
+          <div id="drunklandia-container" class="project-container">
+            <a class="thumb" href="https://sigtaba.github.io/drunklandia/"><img src="img/drunklandia-v2-main.png"></a>
+            <div class="black-image-box" id="drunklandia-box"></div>
+          </div>
         </div>
+        <div class="project-column-right">
+          <div id="album-container" class="project-container">
+            <a class="thumb" href="https://sigtaba.github.io/album-art/"><img src="img/album-showcase.png"></a>
+            <div class="black-image-box" id="album-box"></div>
+          </div>
+          <div id="te-container" class="project-container">
+            <a class="thumb" href="https://sigtaba.github.io/tim-and-eric-timeline/"><img src="img/tim-and-eric.png"></a>
+            <div class="black-image-box" id="te-box"></div>
+          </div>
+          <div id="industrial-container" class="project-container">
+            <a class="thumb" href=""><img src="img/industrial.png"></a>
+            <div class="black-image-box" id="industrial-box"></div>
+          </div>
+        </div>
+
+
+
+        <!-- <div class="project-column">
+          <div class="images-boxes">
+            <a href="https://sigtaba.github.io/P.O.L.L.I/"><img src="img/polli-thumb.png"></a>
+            <div class="polli-box"></div>
+          </div>
+          <br>
+          <div class="images-boxes">
+            <a href="https://sigtaba.github.io/P.O.L.L.I/"><img src="img/icat.png"></a>
+            <div class="polli-box"></div>
+          </div>
+        </div> -->
       </div>
     </section>
 

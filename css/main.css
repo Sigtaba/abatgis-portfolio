@@ -252,7 +252,7 @@ h2 {
   background: -o-linear-gradient(bottom right, #4EC5C1, #E5E338);
   background: -moz-linear-gradient(bottom right, #4EC5C1, #E5E338);
   background: linear-gradient(to bottom right, #4EC5C1, #E5E338);
-  height: 1500px;
+  height: 2800px;
   width: 100vw;
   -webkit-transform: skew(0deg, -13deg);
   margin-top: 100px; }
@@ -285,23 +285,103 @@ h2 {
   width: 450px; }
 
 #project-list {
-  margin-top: 100px; }
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 50px; }
 
-.project-right {
+.project-column-left {
+  -webkit-transform: skew(0deg, 13deg);
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  float: left;
+  margin-top: -120px; }
+  .project-column-left img {
+    max-width: 500px; }
+
+.project-column-right {
   -webkit-transform: skew(0deg, 13deg);
   display: flex;
   margin: 20px 100px;
-  text-align: right; }
-  .project-right img {
+  text-align: right;
+  flex-direction: column;
+  float: right;
+  margin-top: 150px; }
+  .project-column-right img {
     max-width: 500px; }
-  .project-right h3 {
-    font-family: arial black;
-    font-size: 50px;
-    margin: 0; }
-  .project-right p, .project-right a {
-    font-family: "comfortaa"; }
 
 .info {
   margin-right: 40px; }
+
+.images-boxes {
+  position: relative;
+  width: 30vw; }
+
+.project-container {
+  position: relative;
+  width: 30vw; }
+
+#album-container {
+  height: 600px; }
+
+#polli-container {
+  height: 700px; }
+
+#te-container {
+  height: 700px; }
+
+#google-container {
+  height: 820px; }
+
+#drunklandia-container {
+  height: 520px; }
+
+#industrial-container {
+  height: 520px; }
+
+.thumb {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: top ease 1s, left ease 1s, opacity ease 1s; }
+
+.black-image-box {
+  width: 500px;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: -1;
+  transition: top ease 1s, left ease 1s, z-index ease 1s; }
+
+#polli-box {
+  width: 500px;
+  height: 574.03px; }
+
+.project-container:hover > .black-image-box {
+  top: 25px;
+  left: 25px; }
+
+.project-container:hover > .thumb {
+  top: 25px;
+  left: 25px;
+  opacity: 0; }
+
+#album-box {
+  height: 507.92px; }
+
+#te-box {
+  height: 585.3px; }
+
+#google-box {
+  height: 701.16px; }
+
+#drunklandia-box {
+  height: 498.38px; }
+
+#industrial-box {
+  height: 355.8px; }
 
 /*# sourceMappingURL=main.css.map */
