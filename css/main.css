@@ -10,28 +10,28 @@ body {
 
 #mobile-menu {
   text-align: center;
-  margin-top: 100px; }
-  #mobile-menu ul li {
-    font-family: "Arvo", serif;
-    font-size: 20px;
-    display: inline-block;
-    margin: 0px 10px;
-    border: 2px solid white;
-    padding: 20px; }
-    @media screen and (max-width: 650px) {
-      #mobile-menu ul li {
-        font-size: 15px;
-        margin: 0 5px;
-        padding: 10px; } }
-    @media screen and (max-width: 450px) {
-      #mobile-menu ul li {
-        margin-top: 20px; } }
-    #mobile-menu ul li a {
-      color: #4EC5C1;
-      text-decoration: none; }
+  margin-top: 50px; }
   @media screen and (min-width: 1200px) {
     #mobile-menu {
       display: none; } }
+  #mobile-menu ul {
+    padding: 0;
+    margin-top: -80px; }
+  #mobile-menu ul li {
+    list-style-type: none;
+    margin: 10px 20px;
+    transition: transform 200ms; }
+    @media screen and (max-width: 650px) {
+      #mobile-menu ul li {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-top: 0; } }
+    @media screen and (max-width: 650px) {
+      #mobile-menu ul li {
+        margin-left: 5px;
+        margin-right: 5px; } }
+    #mobile-menu ul li:hover {
+      transform: scale(1.1); }
 
 #sidenav {
   display: flex;
@@ -41,7 +41,8 @@ body {
       display: none; } }
 
 #button-image {
-  width: 80%; }
+  width: 80%;
+  color: black; }
 
 .nav {
   top: -40px;
@@ -54,11 +55,14 @@ body {
 .links {
   top: 0px;
   position: absolute;
-  height: 90%;
+  height: 95%;
   overflow: hidden; }
 
-.links ul {
-  padding-top: 90px; }
+#contact-me {
+  padding-top: 5px;
+  font-size: 30px;
+  color: black;
+  text-align: right; }
 
 .menu {
   height: 30px;
@@ -94,7 +98,28 @@ body {
     position: absolute;
     border: 1px solid #75740f; }
   .menu a {
-    color: black; }
+    color: black;
+    text-decoration: none;
+    position: relative; }
+    .menu a:hover {
+      transform: scale(1.3); }
+    .menu a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    .menu a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
   .menu ul {
     list-style-type: none; }
   .menu li {
@@ -162,26 +187,33 @@ body {
   align-items: center;
   color: black;
   text-align: center;
-  font-size: 50px;
   margin-top: 50px;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   margin-bottom: 50px;
   border: 5px solid black;
   height: 200px;
-  width: 85vw;
+  width: 70vw;
   position: relative; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1450px) {
     .title {
-      margin-left: 5vw;
-      margin-right: 5vw; } }
+      height: 150px;
+      margin-bottom: 0px; } }
+  @media screen and (max-width: 800px) {
+    .title {
+      width: 80vw;
+      margin-left: 10vw;
+      margin-right: 10vw; } }
   .title h1 {
     font-family: "Arial Black", sans-serif;
     font-weight: normal;
-    font-size: 100px; }
+    font-size: 80px; }
+    @media screen and (max-width: 1450px) {
+      .title h1 {
+        font-size: 65px; } }
     @media screen and (max-width: 1200px) {
       .title h1 {
-        font-size: 80px; } }
+        font-size: 45px; } }
 
 .title-background {
   z-index: -1;
@@ -196,49 +228,52 @@ body {
   top: 20px;
   left: 20px; }
 
-.my-image img {
-  margin: 20px 90px 20px 20px;
-  width: 230px;
-  display: flex;
-  flex-wrap: wrap;
-  border: 3px solid white; }
-  .my-image img::before {
-    content: "";
-    transform: matrix(1, 1, 0, 1, 0, 0);
-    width: 10px;
-    height: 100%;
-    right: -13px;
-    top: 4.5px;
-    background-color: #a2a015;
-    position: absolute;
-    border: 1px solid #a2a015; }
-
 #about {
   margin-right: 10vw;
   margin-top: 100px;
   font-family: "Arvo", serif;
-  font-size: 18px;
   letter-spacing: 2px;
   line-height: 30px;
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 1300px) {
+    #about {
+      font-size: 15px; } }
+  @media screen and (max-width: 900px) {
+    #about {
+      margin-right: 0vw; } }
+  @media screen and (max-width: 650px) {
+    #about {
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 12px; } }
   #about h3 {
     text-transform: none;
     font-size: 60px;
     margin: 30px 0 20px 0;
     font-family: "Arvo", serif; }
+    @media screen and (max-width: 1300px) {
+      #about h3 {
+        font-size: 45px;
+        line-height: normal; } }
+    @media screen and (max-width: 600px) {
+      #about h3 {
+        font-size: 30px; } }
 
 .about-text {
   margin-top: -40px;
   width: 90vw;
   background-color: black;
   color: white;
-  padding: 50px 20px 40px 10vw; }
+  padding: 40px 20px 40px 10vw; }
+  @media screen and (max-width: 1200px) {
+    .about-text {
+      width: 60vw; } }
   .about-text h3 {
     color: #E5E338; }
   @media screen and (max-width: 600px) {
     .about-text {
-      font-size: 16px;
+      font-size: 12px;
       line-height: 40px; } }
 
 .me {
@@ -246,6 +281,9 @@ body {
   .me img {
     width: 300px;
     margin-right: 20px; }
+    @media screen and (max-width: 1300px) {
+      .me img {
+        width: 200px; } }
 
 h2 {
   text-align: center;
