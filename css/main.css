@@ -303,6 +303,12 @@ h2 {
   width: 100vw;
   -webkit-transform: skew(0deg, -13deg);
   margin-top: 100px; }
+  @media screen and (max-width: 1200px) {
+    #projects {
+      height: 2000px; } }
+  @media screen and (max-width: 800px) {
+    #projects {
+      height: 1700px; } }
 
 .blocks {
   margin-top: 30px;
