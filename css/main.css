@@ -369,6 +369,13 @@ h2 {
   @media screen and (max-width: 1300px) {
     #project-list {
       margin: 40px 10px; } }
+  @media screen and (max-width: 660px) {
+    #project-list {
+      flex-direction: column; } }
+  @media screen and (max-width: 660px) {
+    #project-list {
+      margin: 0 auto;
+      float: none; } }
 
 .project-column-left {
   -webkit-transform: skew(0deg, 13deg);
@@ -392,9 +399,14 @@ h2 {
   @media screen and (max-width: 800px) {
     .project-column-left {
       margin-left: -70px; } }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 660px) {
     .project-column-left {
-      margin-left: -100px; } }
+      margin-left: 100px;
+      margin-top: 100px;
+      float: none; } }
+  @media screen and (max-width: 470px) {
+    .project-column-left {
+      margin-left: 50px; } }
   .project-column-left img {
     width: 500px; }
     @media screen and (max-width: 1200px) {
@@ -415,6 +427,14 @@ h2 {
   @media screen and (max-width: 900px) {
     .project-column-right {
       margin: 150px 0px 20px -100px; } }
+  @media screen and (max-width: 660px) {
+    .project-column-right {
+      margin-left: 100px;
+      float: none;
+      margin-top: 0px; } }
+  @media screen and (max-width: 470px) {
+    .project-column-right {
+      margin-left: 50px; } }
   .project-column-right img {
     width: 500px; }
     @media screen and (max-width: 1200px) {
