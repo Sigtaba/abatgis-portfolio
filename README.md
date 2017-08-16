@@ -14,7 +14,8 @@ OR you can:
 * Open the file folder and double click on 'index.html'
 
 ## Bugs:
-No known bugs
+* Does not render well in Safari
+* Minor issues in Firefox
 
 ## Support:
 If you experience any difficulties, feel free to contact any of the developer: Isabella Abatgis (abatgis@gmail.com)
