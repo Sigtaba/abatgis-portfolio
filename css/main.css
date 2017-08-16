@@ -386,6 +386,9 @@ h2 {
   @media screen and (max-width: 800px) {
     .project-column-left {
       margin-left: -70px; } }
+  @media screen and (max-width: 700px) {
+    .project-column-left {
+      margin-left: -100px; } }
   .project-column-left img {
     width: 500px; }
     @media screen and (max-width: 1200px) {
@@ -403,6 +406,9 @@ h2 {
   @media screen and (max-width: 900px) {
     .project-column-right {
       margin: 150px 0px 20px 0px; } }
+  @media screen and (max-width: 900px) {
+    .project-column-right {
+      margin: 150px 0px 20px -100px; } }
   .project-column-right img {
     width: 500px; }
     @media screen and (max-width: 1200px) {
@@ -423,6 +429,9 @@ h2 {
   @media screen and (max-width: 1200px) {
     .project-container {
       margin: 50px 0px; } }
+  @media screen and (max-width: 800px) {
+    .project-container {
+      margin: 20px 0px; } }
 
 .thumb {
   position: absolute;
