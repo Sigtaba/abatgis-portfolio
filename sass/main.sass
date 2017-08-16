@@ -69,12 +69,12 @@ body
 
 .menu
   height: 30px
-  position: relative
+  position: absolute
   background-color: $primary-color
   width: 180px
   padding: 50px
   top: -20px
-  left: -30px
+  left: 32px
   transition: height ease 3s
   &:hover
     display: block
@@ -130,7 +130,6 @@ body
     text-align: right
     line-height: 60px
     font-family: $main-font
-    // text-transform: uppercase
     letter-spacing: 1px
     font-size: 30px
 
@@ -578,11 +577,15 @@ h2
     background-color: white
     width: 50%
     text-decoration: none
+    color: black
     &:hover
       background-color: $primary-color
+      color: black
     &:active
       color: black
     &:visited
+      color: black
+    &:link
       color: black
 
 .space

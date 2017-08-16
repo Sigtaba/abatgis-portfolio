@@ -66,12 +66,12 @@ body {
 
 .menu {
   height: 30px;
-  position: relative;
+  position: absolute;
   background-color: #E5E338;
   width: 180px;
   padding: 50px;
   top: -20px;
-  left: -30px;
+  left: 32px;
   transition: height ease 3s; }
   .menu:hover {
     display: block;
@@ -602,12 +602,16 @@ h2 {
     padding: 8px;
     background-color: white;
     width: 50%;
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
     .portfolio-link a:hover {
-      background-color: #E5E338; }
+      background-color: #E5E338;
+      color: black; }
     .portfolio-link a:active {
       color: black; }
     .portfolio-link a:visited {
+      color: black; }
+    .portfolio-link a:link {
       color: black; }
 
 .space {
