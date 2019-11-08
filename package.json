@@ -1,0 +1,19 @@
+{
+  "name": "abatgis-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for the web developer Isabella Abatgis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sigtaba/abatgis-portfolio.git"
+  },
+  "author": "Isabella Abatgis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sigtaba/abatgis-portfolio/issues"
+  },
+  "homepage": "https://github.com/Sigtaba/abatgis-portfolio#readme"
+}
