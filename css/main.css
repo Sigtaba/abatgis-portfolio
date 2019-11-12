@@ -218,6 +218,7 @@ body {
 }
 
 .title {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,8 +337,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   .about-text {
+    box-sizing: border-box;
     font-size: 12px;
     line-height: 40px;
+    width: 300px;
   }
 }
 
@@ -519,14 +522,8 @@ h2 {
 }
 @media screen and (max-width: 660px) {
   .project-column-left {
-    margin-left: 100px;
-    margin-top: 100px;
+    margin: 0 auto;
     float: none;
-  }
-}
-@media screen and (max-width: 470px) {
-  .project-column-left {
-    margin-left: 50px;
   }
 }
 .project-column-left img {
@@ -559,14 +556,8 @@ h2 {
 }
 @media screen and (max-width: 660px) {
   .project-column-right {
-    margin-left: 100px;
+    margin: 0 auto;
     float: none;
-    margin-top: 0px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .project-column-right {
-    margin-left: 50px;
   }
 }
 .project-column-right img {
@@ -600,6 +591,11 @@ h2 {
 @media screen and (max-width: 800px) {
   .project-container {
     margin: 20px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-container {
+    width: auto;
   }
 }
 
@@ -782,6 +778,7 @@ h2 {
   text-align: center;
   margin-top: 20px;
   padding: 8px;
+  background-color: white;
 }
 .portfolio-link:hover {
   background-color: #E5E338;
